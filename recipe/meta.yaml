@@ -1,5 +1,5 @@
 {% set name = "dwave-ocean-sdk" %}
-{% set version = "5.0.0" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-ocean-sdk-{{ version }}.tar.gz
-  sha256: 59b9913338c245bc082bb5d1c1f0ade00ba4b473d5840c897d9f0a350ace93fa
+  sha256: 66978b8ac7708f831df8c9935e4cf2d138593948170102681f45da19fa194af2
 
 build:
   noarch: python
