@@ -1,5 +1,5 @@
 {% set name = "dwave-ocean-sdk" %}
-{% set version = "6.0.0" %}
+{% set version = "6.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-ocean-sdk-{{ version }}.tar.gz
-  sha256: c7496ad96e78b63db2a3551fbf4613eb414cdbe24f8bfe4b16494cc2c2a18960
+  sha256: d20f52bb7859ca039c4257273f6c26fd9f7d9354cfc7f0ab22f0cfa4752841b1
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - dwave-inspector ==0.3.0
     - dwave-neal ==0.5.9
     - dwave-networkx ==0.8.12
-    - dwave-preprocessing ==0.5.0
+    - dwave-preprocessing ==0.5.1
     - dwave-system ==1.16.0
     - dwave-tabu ==0.4.5
     - dwavebinarycsp ==0.2.0
