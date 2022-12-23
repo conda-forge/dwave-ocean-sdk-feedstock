@@ -4,6 +4,5 @@ github:
 conda_forge_output_validation: true
 bot:
   inspection: update-grayskull
-  check_solvable: true
 conda_build:
   pkg_format: '2'
