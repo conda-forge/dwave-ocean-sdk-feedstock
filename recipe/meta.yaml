@@ -1,5 +1,5 @@
 {% set name = "dwave-ocean-sdk" %}
-{% set version = "6.0.1" %}
+{% set version = "6.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-ocean-sdk-{{ version }}.tar.gz
-  sha256: d20f52bb7859ca039c4257273f6c26fd9f7d9354cfc7f0ab22f0cfa4752841b1
+  sha256: f9f3d185f15852cf408b1edd74e20785200ecba076fe950349ea84bb34e12731
 
 build:
   noarch: python
@@ -21,18 +21,20 @@ requirements:
     - setuptools >=46.4.0
     - wheel
   run:
-    - dimod ==0.12.0
-    - dwave-cloud-client ==0.10.3
-    - dwave-greedy ==0.2.5
-    - dwave-hybrid ==0.6.9
-    - dwave-inspector ==0.3.0
-    - dwave-neal ==0.5.9
-    - dwave-networkx ==0.8.12
-    - dwave-preprocessing ==0.5.1
-    - dwave-system ==1.16.0
-    - dwave-tabu ==0.4.5
+    - dwave-samplers ==1.0.0
+    - pyqubo ==1.4.0
+    - dimod ==0.12.6
+    - dwave-cloud-client ==0.10.5
+    - dwave-greedy ==0.3.0
+    - dwave-hybrid ==0.6.10
+    - dwave-inspector ==0.4.2
+    - dwave-neal ==0.6.0
+    - dwave-networkx ==0.8.14
+    - dwave-preprocessing ==0.5.4
+    - dwave-system ==1.19.0
+    - dwave-tabu ==0.5.0
     - dwavebinarycsp ==0.2.0
-    - minorminer ==0.2.9
+    - minorminer ==0.2.11
     - penaltymodel ==1.0.2
     - python >=3.7
 
