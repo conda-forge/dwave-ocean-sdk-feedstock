@@ -1,11 +1,11 @@
-About dwave-ocean-sdk
-=====================
+About dwave-ocean-sdk-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dwave-ocean-sdk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dwavesystems/dwave-ocean-sdk
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dwave-ocean-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: Software development kit for open source D-Wave tools
 
