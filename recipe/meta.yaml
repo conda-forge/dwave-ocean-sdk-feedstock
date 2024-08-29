@@ -22,7 +22,7 @@ requirements:
     - wheel
   run:
     - dimod ==0.12.16
-    - dwave-cloud-client== 0.12.1
+    - dwave-cloud-client ==0.12.1
     - dwave-gate ==0.3.2
     - dwave-greedy ==0.3.0
     - dwave-hybrid ==0.6.11
