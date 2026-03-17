@@ -1,13 +1,13 @@
 {% set name = "dwave-ocean-sdk" %}
-{% set version = "6.4.1" %}
+{% set version = "8.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-ocean-sdk-{{ version }}.tar.gz
-  sha256: 4536e1a1a9b844c9f7e58061186ddaf3126aeb651553666bfbf86249192bbb8e
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0a227bf1f97b0ee9fb40512f90e21ebc9e41cc9afe64a3b3a8a8883cf4b67d8e
 
 build:
   noarch: python
@@ -17,26 +17,27 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools >=46.4.0
     - wheel
   run:
-    - dwave-samplers ==1.0.0
-    - pyqubo ==1.4.0
-    - dimod ==0.12.6
-    - dwave-cloud-client ==0.10.6
+    - dwave-gate ==0.3.2
+    - dwave-optimization ==0.3.0
+    - dwave-samplers ==1.3.0
+    - dimod ==0.12.17
+    - dwave-cloud-client ==0.13.1
     - dwave-greedy ==0.3.0
-    - dwave-hybrid ==0.6.10
-    - dwave-inspector ==0.4.2
+    - dwave-hybrid ==0.6.12
+    - dwave-inspector ==0.5.1
     - dwave-neal ==0.6.0
-    - dwave-networkx ==0.8.14
-    - dwave-preprocessing ==0.5.4
-    - dwave-system ==1.19.0
+    - dwave-networkx ==0.8.15
+    - dwave-preprocessing ==0.6.6
+    - dwave-system ==1.26.0
     - dwave-tabu ==0.5.0
-    - dwavebinarycsp ==0.2.0
-    - minorminer ==0.2.11
-    - penaltymodel ==1.0.2
-    - python >=3.7
+    - dwavebinarycsp ==0.3.0
+    - minorminer ==0.2.15
+    - penaltymodel ==1.1.0
+    - python >=3.8
 
 test:
   imports:
